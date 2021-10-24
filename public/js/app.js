@@ -9,7 +9,7 @@ const message2 = document.querySelector('.message2')
 form.addEventListener('submit', (event)=>{
     event.preventDefault()
     const location = search.value
-    const url = "http://localhost:3000/weather?address=" + encodeURIComponent(location)
+    const url = "/weather?address=" + encodeURIComponent(location)
     message1.textContent = 'Loading..'
     message2.textContent = ''
 
